@@ -1,0 +1,77 @@
+using System;
+public class date
+{
+    private int dd;
+    private int mm;
+    private int yy;
+
+    public date(int d,int m,int y)
+    {
+        dd = d;
+        mm = m;
+        yy = y;
+    }
+    public int getdd()
+    {
+        return dd;
+    }
+    public int getmm()
+    {
+        return mm;
+    }
+    public int getyy()
+    {
+        return yy;
+    }
+}
+public class Appointment
+{
+    private string nri;
+    private string nam;
+    private string fe;
+    private int vid;
+    private int vim;
+    private int viy;
+    private string nvd;
+    public Appointment(string nric, string name, string fees,int gd,int gm,int gy,string nv)
+    {
+        nri = nric;
+        nam = name;
+        fe = fees;
+        vid = gd;
+        vim = gm;
+        viy = gy;
+        nvd = nv;
+    }
+    public void displayapt()
+    {
+        Console.WriteLine("Patient ID: "+ nri +" "+ nam +" " + fe+" ");
+        Console.WriteLine("Date of Visit : " + vid + "/" + vim + "/" + viy);
+        Console.WriteLine("Date of NextVisit : " + nvd);
+    }
+}
+public class JobDemo
+{
+    public static void Main(string[] args)
+    {
+        date d = new date(12, 12, 2012);
+        Appointment a = new Appointment("s12345","Tan Ah Sam","$45", d.getdd(), d.getmm(), d.getyy(),"8/6/2015");
+        a.displayapt();
+        date e = new date(3,3, 2015);
+        Appointment aa = new Appointment("s34567", "Lee Tao San", "$60", e.getdd(), e.getmm(), e.getyy(),"-");
+        aa.displayapt();
+        date f = new date(10, 3, 2015);
+        Appointment aaa = new Appointment("s56783", "Sam Ting", "$120.5", f.getdd(), f.getmm(), f.getyy(), "31/3/2015");
+        aaa.displayapt();
+        date g = new date(31, 3, 2015);
+        Appointment aaaa = new Appointment("s98671", "Anthony Chin", "$78.5", g.getdd(), g.getmm(), g.getyy(), "30/4/2015");
+        aaaa.displayapt();
+
+
+
+        Console.WriteLine("Print single appoinment : s56783");
+        date h = new date(10, 3, 2015);
+        Appointment q = new Appointment("s56783", "Sam Ting", "$120.5", h.getdd(), h.getmm(), h.getyy(), "31/3/2015");
+        q.displayapt();
+    }
+}

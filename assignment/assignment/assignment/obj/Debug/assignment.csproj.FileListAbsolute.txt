@@ -1,7 +1,0 @@
-C:\Users\hordo\OneDrive\Desktop\c#\assignment\assignment\assignment\bin\Debug\assignment.exe.config
-C:\Users\hordo\OneDrive\Desktop\c#\assignment\assignment\assignment\bin\Debug\assignment.exe
-C:\Users\hordo\OneDrive\Desktop\c#\assignment\assignment\assignment\bin\Debug\assignment.pdb
-C:\Users\hordo\OneDrive\Desktop\c#\assignment\assignment\assignment\obj\Debug\assignment.csprojAssemblyReference.cache
-C:\Users\hordo\OneDrive\Desktop\c#\assignment\assignment\assignment\obj\Debug\assignment.csproj.CoreCompileInputs.cache
-C:\Users\hordo\OneDrive\Desktop\c#\assignment\assignment\assignment\obj\Debug\assignment.exe
-C:\Users\hordo\OneDrive\Desktop\c#\assignment\assignment\assignment\obj\Debug\assignment.pdb
